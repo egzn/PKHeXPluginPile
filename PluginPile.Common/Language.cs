@@ -6,6 +6,7 @@ public static class Language {
 
   public static string Cancel => GameInfo.CurrentLanguage switch {
     "de"      => "Abbrechen",
+    "es"      => "Cancelar",
     "zh-Hans" => "取消",
     "it"      => "Annulla",
     "en" or _ => "Cancel"
@@ -13,18 +14,21 @@ public static class Language {
 
   public static string Save => GameInfo.CurrentLanguage switch {
     "de"      => "Speichern",
+    "es"      => "Guardar",
     "zh-Hans" => "保存",
     "it"      => "Salva",
     "en" or _ => "Save"
   };
 
   public static string Unused => GameInfo.CurrentLanguage switch {
+    "es"      => "Sin uso",
     "zh-Hans" => "未使用",
     "it"      => "Inutilizzato",
     "en" or _ => "Unused"
   };
 
   public static string New => GameInfo.CurrentLanguage switch {
+    "es"      => "Nuevo",
     "en" or _ => "New"
   };
 
